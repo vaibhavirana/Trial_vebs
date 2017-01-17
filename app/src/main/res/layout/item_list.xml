@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    android:transitionName="@string/transition_item"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/colored_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/text_margin1"
+        android:background="@drawable/bg2" />
+
+    <View
+        android:id="@+id/colored_view1"
+        android:layout_width="@dimen/text_margin"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:background="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="@dimen/text_margin1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
